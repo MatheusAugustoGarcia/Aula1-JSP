@@ -12,3 +12,5 @@ os.arch=amd64
 os.version=10.0
 derby.system.home=X:\Projetos-Netbeans\Aula1
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Sep 02 15:51:43 BRT 2021: Shutting down Derby engine
