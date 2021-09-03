@@ -40,7 +40,7 @@ public class DAOCliente {
     
     public void removerCliente(Cliente cliente) {
         
-        String sql = "DELETE FROM tb_clientes WHERE id IN (?)";
+        String sql = "DELETE FROM tb_clientes WHERE id = ?";
         
         try {
             
@@ -61,14 +61,14 @@ public class DAOCliente {
     
     public void uptadeCliente(Cliente cliente) {
         
-        String sql = "UPDATE tb_clientes SET (nome,email)VALUES(?,?) WHERE id IN (?)";
+        String sql = "UPDATE tb_clientes SET nome=?, email=? WHERE id=?";
         
         try {
             
             stmt = conn.prepareStatement(sql);
-            stmt.setInt(3,cliente.getId());
             stmt.setString(1,cliente.getNome());
             stmt.setString(2,cliente.getEmail());
+            stmt.setInt(3,cliente.getId());
             stmt.execute();
             stmt.close();
             

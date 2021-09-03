@@ -6,7 +6,7 @@
         <title>Atualização</title>
     </head>
     <body>
-        <form method="post" action="pag_update.jsp">
+        <form method="post" action="executar_update.jsp">
             <h1>Atualizar Cliente</h1>
             <br>
             <label>ID: </label>

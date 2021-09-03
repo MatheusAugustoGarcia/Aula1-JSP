@@ -21,6 +21,7 @@
                
                else {
                    
+                   cli.setId(id);
                    cli.setNome(nome);
                    cli.setEmail(email);
                    cld.uptadeCliente(cli);
