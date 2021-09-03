@@ -18,7 +18,7 @@ public class DAOCliente {
     
     public void inserirCliente(Cliente cliente) {
         
-        String sql = "INSERT INTO TB_CLIENTES(nome,email)"+"VALUES(?,?)";
+        String sql = "INSERT INTO tb_clientes(nome,email)VALUES(?,?)";
         
         try {
             
