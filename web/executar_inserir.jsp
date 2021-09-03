@@ -1,12 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="MODEL.Cliente"%>
 <%@page import="DAO.DAOCliente"%>
-
-<!DOCTYPE html>
-<html>
-    
-    <body>
-        
+     
         <%
           
             try {
@@ -41,7 +36,3 @@
             }
 
         %>
-        
-    </body>
-    
-</html>
