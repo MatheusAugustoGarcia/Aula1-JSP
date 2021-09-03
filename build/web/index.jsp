@@ -3,19 +3,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Index</title>
     </head>
     <body>
         <form method="post" action="executar_inserir.jsp">
             <h1>Cadastro de cliente</h1>
             <br>
-            <label>Nome</label>
+            <label>Nome: </label>
             <input type="text" name="nome" required=""/>
             <br><br>
-            <label>Email</label>
+            <label>Email: </label>
             <input type="text" name="email" required=""/>
             <br><br>
             <input type="submit" value="ENVIAR"/>
+            <br><br><br><br>
         </form>
+        
+        <h1>Menu</h1> 
+        <input type="button" value="Remover cliente" onclick="window.location='pag_remover.jsp'" >
+        <input type="button" value="Atualizar cliente" onclick="window.location='pag_update.jsp'" >
+        
     </body>
 </html>
