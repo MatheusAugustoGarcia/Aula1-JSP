@@ -3,12 +3,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <title>Remoção</title>
     </head>
     <body>
+        
+        <h1>Remover Cliente</h1>
+        
+        <div class="center">
+        
         <form method="post" action="executar_remover.jsp">
-            <h1>Remover Cliente</h1>
-            <br>
             <label>ID: </label>
             <input type="text" name="id" value="<%=request.getParameter("id")%>" readonly/>
             <br><br>
@@ -16,11 +20,17 @@
             <input type="text" name="nome" value="<%=request.getParameter("nome")%>" readonly/>
             <br><br>
             <input type="submit" value="Remover"/>
-            <br><br><br><br>
         </form>
         
+        </div>    
+            
         <h1>Menu</h1> 
-        <input type="button" value="Voltar" onclick="window.location='pag_mostrar.jsp'" >
+        
+        <div class="center">
+            
+        <a class="button" href="pag_mostrar.jsp">Voltar</a>
+        
+        </div>
         
     </body>
 </html>

@@ -3,12 +3,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <title>Atualização</title>
     </head>
     <body>
+        
+        <h1>Atualizar Cliente</h1>
+        
+        <div class="center">
+        
         <form method="post" action="executar_update.jsp">
-            <h1>Atualizar Cliente</h1>
-            <br>
+
             <label>ID: </label>
             <input type="text" name="id" value="<%=request.getParameter("id")%>" readonly/>
             <br><br>
@@ -19,11 +24,18 @@
             <input type="text" name="email" value="<%=request.getParameter("email")%>"/>
             <br><br>
             <input type="submit" value="Atualizar"/>
-            <br><br><br><br>
+            
         </form>
         
+        </div>    
+            
         <h1>Menu</h1> 
-        <input type="button" value="Voltar" onclick="window.location='pag_mostrar.jsp'" >
+        
+        <div class="center">
+            
+        <a class="button" href="pag_mostrar.jsp">Voltar</a>
+        
+        </div>
         
     </body>
 </html>

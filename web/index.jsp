@@ -3,12 +3,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <title>Index</title>
     </head>
     <body>
+        
+        
+        <h1>Inserir Cliente</h1>
+        
+        <div class="center">
+        
         <form method="post" action="executar_inserir.jsp">
-            <h1>Cadastro de cliente</h1>
-            <br>
             <label>Nome: </label>
             <input type="text" name="nome" required=""/>
             <br><br>
@@ -16,11 +21,17 @@
             <input type="text" name="email" required=""/>
             <br><br>
             <input type="submit" value="ENVIAR"/>
-            <br><br><br><br>
         </form>
         
+        </div>    
+            
         <h1>Menu</h1> 
-        <input type="button" value="Mostrar DB" onclick="window.location='pag_mostrar.jsp'" >
+        
+        <div class="center">
+        
+        <a class="button" href="pag_mostrar.jsp">Consultar DB</a>
+        
+        </div>
         
     </body>
 </html>

@@ -8,11 +8,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <title>Mostrar</title>
     </head>
     <body>
         
         <h1>Consultar DB</h1>
+        
+        <div class="center">
         
         <%
           
@@ -55,11 +58,15 @@
 
         %>
         
-        <br><br><br><br>
+        </div>
         
         <h1>MENU</h1>
         
-        <input type="button" value="Voltar" onclick="window.location='index.jsp'" >
+        <div class="center">
+        
+        <a class="button" href="index.jsp">Voltar</a>
+        
+        </div>  
         
     </body>
 </html>
