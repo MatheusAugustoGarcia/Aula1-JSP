@@ -22,6 +22,8 @@
                 out.print("<th>ID</th>");
                 out.print("<th>Nome</th>");
                 out.print("<th>Email</th>");
+                out.print("<th>Update</th>");
+                out.print("<th>Delete</th>");
                 
             out.print("</tr>");
             
@@ -34,8 +36,17 @@
             
                 out.print("<td>"+lista.get(i).getId()+"</td>");
                 out.print("<td>"+lista.get(i).getNome()+"</td>");
-                out.print("<td>"+lista.get(i).getEmail()+"</td>");  
-                
+                out.print("<td>"+lista.get(i).getEmail()+"</td>");
+                out.print("<td><a href='pag_update.jsp?id="
+                        + lista.get(i).getId()
+                        + "&nome="+lista.get(i).getNome()
+                        + "&email="+lista.get(i).getEmail()
+                        +"'>Link</a></td>");
+                out.print("<td><a href='pag_remover.jsp?id="
+                        + lista.get(i).getId()
+                        + "&nome="+lista.get(i).getNome()
+                        +"'>Link</a></td>");
+                              
             out.print("</tr>");
             
             }

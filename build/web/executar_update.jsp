@@ -15,7 +15,7 @@
                
                if(id == 0 || nome.equals(null) || email.equals(null)) {
                    
-                   response.sendRedirect("pag_update.jsp");
+                   response.sendRedirect("pag_mostrar.jsp");
                    
                }
                
@@ -25,7 +25,7 @@
                    cli.setNome(nome);
                    cli.setEmail(email);
                    cld.uptadeCliente(cli);
-                   response.sendRedirect("pag_update.jsp");
+                   response.sendRedirect("pag_mostrar.jsp");
                    
                }
                 

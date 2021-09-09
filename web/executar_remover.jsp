@@ -13,7 +13,7 @@
                
                if(id == 0) {
                    
-                   response.sendRedirect("pag_remover.jsp");
+                   response.sendRedirect("pag_mostrar.jsp");
                    
                }
                
@@ -21,7 +21,7 @@
                    
                    cli.setId(id);
                    cld.removerCliente(cli);
-                   response.sendRedirect("pag_remover.jsp");
+                   response.sendRedirect("pag_mostrar.jsp");
                    
                }
                 
