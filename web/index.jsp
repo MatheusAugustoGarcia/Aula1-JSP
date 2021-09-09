@@ -22,6 +22,7 @@
         <h1>Menu</h1> 
         <input type="button" value="Remover cliente" onclick="window.location='pag_remover.jsp'" >
         <input type="button" value="Atualizar cliente" onclick="window.location='pag_update.jsp'" >
+        <input type="button" value="Mostrar DB" onclick="window.location='pag_mostrar.jsp'" >
         
     </body>
 </html>
