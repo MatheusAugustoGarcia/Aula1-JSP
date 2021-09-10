@@ -15,6 +15,16 @@
         
         <h1>Consultar DB</h1>
         
+        <br><br><br>
+        
+        <form action="pag_mostrar.jsp" method="post">
+         
+            <label>Pesquisa por nome: </label>
+            <input type="text" name="nome" />
+            <input type="submit" value="Pesquisar" />
+            
+        </form>
+        
         <div class="center">
         
         <%
@@ -31,6 +41,9 @@
             out.print("</tr>");
             
             DAOCliente cli = new DAOCliente();
+            
+            if (request.getParameter("nome") == "" || request.getParameter("nome") == null) {
+            
             ArrayList<Cliente> lista = cli.listarCliente();
             
             for (int i=0;i<lista.size();i++) {
@@ -52,6 +65,35 @@
                               
             out.print("</tr>");
             
+            }
+            
+            }
+            
+            else {
+                
+                ArrayList<Cliente> lista = cli.pesquisarNome(request.getParameter("nome"));
+            
+            for (int i=0;i<lista.size();i++) {
+            
+            out.print("<tr>");
+            
+                out.print("<td>"+lista.get(i).getId()+"</td>");
+                out.print("<td>"+lista.get(i).getNome()+"</td>");
+                out.print("<td>"+lista.get(i).getEmail()+"</td>");
+                out.print("<td><a href='pag_update.jsp?id="
+                        + lista.get(i).getId()
+                        + "&nome="+lista.get(i).getNome()
+                        + "&email="+lista.get(i).getEmail()
+                        +"'>Link</a></td>");
+                out.print("<td><a href='pag_remover.jsp?id="
+                        + lista.get(i).getId()
+                        + "&nome="+lista.get(i).getNome()
+                        +"'>Link</a></td>");
+                              
+            out.print("</tr>");
+            
+            }
+                           
             }
             
             out.print("</table>");

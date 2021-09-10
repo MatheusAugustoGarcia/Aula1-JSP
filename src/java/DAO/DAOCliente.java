@@ -119,5 +119,37 @@ public class DAOCliente {
         return lista;
         
     }
+    
+    public ArrayList<Cliente> pesquisarNome(String v) {
+        
+        String sql = "SELECT * FROM tb_clientes WHERE nome LIKE '%"+v+"%' ";
+        
+        try { 
+            
+            st = conn.createStatement();
+            rs = st.executeQuery(sql);
+            
+            while(rs.next()) {
+                
+                Cliente cliente = new Cliente();
+                cliente.setId(rs.getInt("id"));
+                cliente.setNome(rs.getString("nome"));
+                cliente.setEmail(rs.getString("email"));
+                
+                lista.add(cliente);
+                
+            }
+            
+        }
+        
+        catch (Exception erro) {
+            
+            throw new RuntimeException("Erro no Pesquisar por nome: " + erro);
+            
+        }
+        
+        return lista;
+        
+    }
        
 }
