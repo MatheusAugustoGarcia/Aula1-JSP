@@ -1,7 +1,7 @@
-Fri Sep 10 15:19:47 BRT 2021 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+Fri Sep 10 15:57:39 BRT 2021 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Fri Sep 10 15:19:47 BRT 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-017b-d0ef-e40e-ffffe9d8c935 
+Fri Sep 10 15:57:39 BRT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-017b-d112-8db3-ffffe9d8c935 
 on database directory X:\Projetos-Netbeans\Aula1\bdTreino with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
 Loaded from file:/C:/jdk/jdk1.8.0_111/db/lib/derby.jar
 java.vendor=Oracle Corporation
@@ -12,3 +12,5 @@ os.arch=amd64
 os.version=10.0
 derby.system.home=X:\Projetos-Netbeans\Aula1
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Sep 10 17:09:41 BRT 2021: Shutting down Derby engine

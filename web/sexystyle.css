@@ -1,0 +1,85 @@
+* {
+
+    padding: 0.5%;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+
+}
+
+html, body {
+
+    background-color: #05445E;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header-container {
+
+    float: left;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 5px;
+    border: white solid 2px;
+    height: fit-content;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    text-align: center;
+    
+}
+
+.Body-container {
+
+    margin-top: 0.5%;
+    float: left;
+    width: fit-content;
+    box-sizing: border-box;
+    border: white solid 2px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    height: fit-content;
+    overflow: auto;
+    text-align: center;
+    
+}
+
+.center {
+  margin-top: 0.5%;
+  float: left;
+  margin-left: 25%;
+  width: 50%;
+  padding: 10px;
+}
+
+.button {
+    
+    border-style: solid;
+    border-width: 0px 0px 3px;
+    color: #FFFFFF;	   
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+    
+}
+
+input[type="text"] {
+    max-width: 200px;
+}
+
+table {
+    
+    margin: auto;
+    border-collapse: separate;
+    
+}
+
+td {
+    
+    padding: 10px 10px;
+    
+}

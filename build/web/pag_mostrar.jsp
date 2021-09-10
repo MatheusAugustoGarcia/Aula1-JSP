@@ -8,14 +8,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="sexystyle.css" rel="stylesheet" type="text/css"/>
         <title>Mostrar</title>
     </head>
     <body>
         
+        <div class="Header-container center">
+        
         <h1>Consultar DB</h1>
         
-        <br><br><br>
+        </div>
+        
+        <div class="Body-container center">
         
         <form action="pag_mostrar.jsp" method="post">
          
@@ -25,7 +29,9 @@
             
         </form>
         
-        <div class="center">
+        </div>    
+        
+        <div class="Body-container center">
         
         <%
           
@@ -53,12 +59,12 @@
                 out.print("<td>"+lista.get(i).getId()+"</td>");
                 out.print("<td>"+lista.get(i).getNome()+"</td>");
                 out.print("<td>"+lista.get(i).getEmail()+"</td>");
-                out.print("<td><a href='pag_update.jsp?id="
+                out.print("<td><a class='button' href='pag_update.jsp?id="
                         + lista.get(i).getId()
                         + "&nome="+lista.get(i).getNome()
                         + "&email="+lista.get(i).getEmail()
                         +"'>Link</a></td>");
-                out.print("<td><a href='pag_remover.jsp?id="
+                out.print("<td><a class='button' href='pag_remover.jsp?id="
                         + lista.get(i).getId()
                         + "&nome="+lista.get(i).getNome()
                         +"'>Link</a></td>");
@@ -102,9 +108,13 @@
         
         </div>
         
+        <div class="Header-container center">
+        
         <h1>MENU</h1>
         
-        <div class="center">
+        </div>
+        
+        <div class="Body-container center">
         
         <a class="button" href="index.jsp">Voltar</a>
         

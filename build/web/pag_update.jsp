@@ -3,14 +3,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="sexystyle.css" rel="stylesheet" type="text/css"/>
         <title>Atualização</title>
     </head>
     <body>
         
+        <div class="Header-container center">
+        
         <h1>Atualizar Cliente</h1>
         
-        <div class="center">
+        </div>
+        
+        <div class="Body-container center">
         
         <form method="post" action="executar_update.jsp">
 
@@ -23,15 +27,19 @@
             <label>Email: </label>
             <input type="text" name="email" value="<%=request.getParameter("email")%>"/>
             <br><br>
-            <input type="submit" value="Atualizar"/>
+            <input class="button" type="submit" value="Atualizar"/>
             
         </form>
         
         </div>    
+          
+        <div class="Header-container center">
             
         <h1>Menu</h1> 
         
-        <div class="center">
+        </div>
+        
+        <div class="Body-container center">
             
         <a class="button" href="pag_mostrar.jsp">Voltar</a>
         
