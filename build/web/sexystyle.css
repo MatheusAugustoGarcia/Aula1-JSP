@@ -45,14 +45,15 @@ html, body {
   margin-top: 0.5%;
   float: left;
   margin-left: 25%;
+  margin-right: 25%;
   width: 50%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .button {
     
     border-style: solid;
-    border-width: 0px 0px 3px;
+    border-width: 1px;
     color: #FFFFFF;	   
     border-radius: 6px;
     cursor: pointer;
@@ -61,9 +62,10 @@ html, body {
     text-align: center;
     text-decoration: none;
     text-overflow: ellipsis;
-    white-space: nowrap;	
+    white-space: normal;	
     background-color: #ED5A5A !important;
-    border-color: #EA4343 !important;
+    border-color: #ED5A5A !important;
+    width: 100%;
     
 }
 
@@ -74,7 +76,9 @@ input[type="text"] {
 table {
     
     margin: auto;
-    border-collapse: separate;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
     
 }
 
@@ -82,4 +86,26 @@ td {
     
     padding: 10px 10px;
     
+}
+
+tr:hover {background-color: #ddd;}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+th {
+    
+    background-color: #05445E;
+    color:white;
+    
+}
+
+
+.content-wrapper {
+
+    overflow: auto;
+    padding: 0%;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 5%;
+
 }

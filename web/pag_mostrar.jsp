@@ -13,6 +13,8 @@
     </head>
     <body>
         
+        <div class="content-wrapper">
+        
         <div class="Header-container center">
         
         <h1>Consultar DB</h1>
@@ -23,7 +25,7 @@
         
         <form action="pag_mostrar.jsp" method="post">
          
-            <label>Pesquisa por nome: </label>
+            <label>Pesquisar por nome: </label>
             <input type="text" name="nome" />
             <input type="submit" value="Pesquisar" />
             
@@ -86,12 +88,12 @@
                 out.print("<td>"+lista.get(i).getId()+"</td>");
                 out.print("<td>"+lista.get(i).getNome()+"</td>");
                 out.print("<td>"+lista.get(i).getEmail()+"</td>");
-                out.print("<td><a href='pag_update.jsp?id="
+                out.print("<td><a class='button' href='pag_update.jsp?id="
                         + lista.get(i).getId()
                         + "&nome="+lista.get(i).getNome()
                         + "&email="+lista.get(i).getEmail()
                         +"'>Link</a></td>");
-                out.print("<td><a href='pag_remover.jsp?id="
+                out.print("<td><a class='button' href='pag_remover.jsp?id="
                         + lista.get(i).getId()
                         + "&nome="+lista.get(i).getNome()
                         +"'>Link</a></td>");
@@ -114,11 +116,13 @@
         
         </div>
         
-        <div class="Body-container center">
+        <div class="Header-container center">
         
         <a class="button" href="index.jsp">Voltar</a>
         
-        </div>  
+        </div>
+        
+        </div>
         
     </body>
 </html>

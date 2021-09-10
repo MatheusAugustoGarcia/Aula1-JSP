@@ -8,6 +8,8 @@
     </head>
     <body>
         
+        <div class="content-wrapper">
+        
         <div class="Header-container center">
         
         <h1>Remover Cliente</h1>
@@ -34,11 +36,13 @@
         
         </div>
         
-        <div class="Body-container center">
+        <div class="Header-container center">
             
         <a class="button" href="pag_mostrar.jsp">Voltar</a>
         
         </div>
         
+        </div>    
+            
     </body>
 </html>
